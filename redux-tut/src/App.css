@@ -27,7 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-/*  */
+/****************************Component CSS********************************/
 .cart-wrapper{
   height: 100px;
   width: 500px;
@@ -41,7 +41,20 @@
   width: 120px;
   padding: 20px;
   height: 70px;
-
+}
+.cart-wrapper .item3{
+  padding: 10px;
+}
+.cart-count{
+  right: 1.4vw;
+  top: 15px;
+  z-index: 1;
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  width: 20px;
+  color: white;
+  padding: 4px;
 }
 .btn-wrapper button {
   background-color: red;
@@ -51,6 +64,14 @@
   color: white;
   box-shadow: #333 0px 1px 5px;
 }
+.btn-wrapper .remove-btn{
+ float: left;
+ display: inline-block;
+ width: 120px;
+margin-top: 10px;
+background-color: rgb(115, 90, 190);
+}
+
 .img-wrapper img{
   width: 50px;
   margin-top: -10px;

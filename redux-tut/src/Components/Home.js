@@ -1,12 +1,10 @@
 import React from 'react'
 import iphone from '../image/iphone.jpg';
+// import Header from './Header';
 const Home = (props) => {
-  console.log("props",props);
+  console.log("props home",props);
   return (
     <div>
-      <div className='add-to-cart'>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" alt="cart" />
-      </div>
       <h1>
         Home Component
       </h1>
@@ -22,12 +20,18 @@ const Home = (props) => {
             Price: $1000.00
           </span>
         </div>
-        <div className='btn-wrapper item'>
+        <div className='btn-wrapper item item3'>
           <button 
           onClick={()=>
-          props.addToCartHandler({price:1000,})}
+          props.addToCartHandler({price:1000, name: 'i phone 1'})}
           >
             Add To Cart
+          </button>
+          <button className='remove-btn'
+          onClick={()=>
+          props.removeToCartHandler()}
+          >
+            Remove To Cart
           </button>
         </div>
       </div>
